@@ -1,5 +1,5 @@
 # DigiLib
-> Read everyday from everywhere
+> DigiLib, your one-stop destination for all your reading needs.
 
 ## Table of Contents
 * [Pendahuluan](#pendahuluan)
@@ -10,7 +10,7 @@
 * [License](#license)
 
 ## Pendahuluan
-DigiLib adalah aplikasi berbasis web yang memiliki visi untuk mempermudah pelajar, guru, dan staff di instansi pendidikan dalam mendapatkan kemudahan akses membaca buku secara digital
+Perkenalkan aplikasi terbaik kami Digilib - your one-stop destination for all your reading needs. Dengan kolesi e-book dan audiobook yang luas, Anda tidak akan pernah kehabisan sesuatu untuk dibaca. Jelajahi pilihan bestsellers, new releases, dan hidden gems kami untuk menemukan buku favorit Anda berikutnya. Lacak progres membaca Anda, buat notes, dan bahkan buat reading lists untuk dibagikan dengan teman. Jangan pernah lupa kapan buku Anda jatuh tempo dengan fitur kartu anggota perpustakaan kami yang mudah digunakan.
 
 ## Informasi
 - Judul Buku
