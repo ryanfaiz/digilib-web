@@ -34,7 +34,9 @@
 
         <div class="book-container">
             <div class="book">
-
+                <div class="book-cover">
+                
+                </div>
             </div>
         </div>
     </section>
