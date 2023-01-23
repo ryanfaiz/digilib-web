@@ -42,3 +42,8 @@ nav div a {
     display: flex;
     align-items: center;
 }
+
+.book-cover img {
+    aspect-ratio: 5 / 8;
+    
+}
