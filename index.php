@@ -73,27 +73,6 @@
                         <h2>Book Title</h2>
                     </div>
                 </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 5">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover ">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
-            </div>
         </div>
     </section>
 
@@ -136,26 +115,6 @@
                     <div class="book">
                         <div class="book-cover">
                             <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 4">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 5">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover ">
                         </div>
     
                         <h2>Book Title</h2>
