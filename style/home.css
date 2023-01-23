@@ -62,3 +62,7 @@ nav div a {
     max-height: 360px;
     border-radius: 15px;
 }
+
+#popular-sect {
+    margin: 25px 50px;
+}
