@@ -30,7 +30,7 @@
     </section>
 
     <section id="new-sect">
-        
+        <h1>New Collection</h1>
     </section>
 </body>
 </html>
