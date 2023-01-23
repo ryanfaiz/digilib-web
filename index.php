@@ -33,7 +33,9 @@
         <h1>New Collection</h1>
 
         <div class="book-container">
-            
+            <div class="book">
+
+            </div>
         </div>
     </section>
 </body>
