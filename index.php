@@ -37,6 +37,8 @@
                 <div class="book-cover">
                 
                 </div>
+                
+                <h2>Book Title</h2>
             </div>
         </div>
     </section>
