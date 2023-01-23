@@ -28,5 +28,9 @@
 
         <img src="/img/head.webp" alt="Head Image">
     </section>
+
+    <section id="new-sect">
+        
+    </section>
 </body>
 </html>
