@@ -33,13 +33,15 @@
         <h1>New Collection</h1>
 
         <div class="book-container">
-            <div class="book">
-                <div class="book-cover">
-                    <img src="/img/sample/book-cover-sample.webp" alt="Book Cover">
-                </div>
+            <a href="">
+                <div class="book">
+                    <div class="book-cover">
+                        <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 1">
+                    </div>
 
-                <h2>Book Title</h2>
-            </div>
+                    <h2>Book Title</h2>
+                </div>
+            </a>
         </div>
     </section>
 </body>
