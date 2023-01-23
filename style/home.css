@@ -42,6 +42,12 @@ nav div a {
     margin: 25px 50px;
 }
 
+.horizontal-slide {
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
 .book-container {
     display: flex;
     align-items: center;
