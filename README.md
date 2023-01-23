@@ -33,7 +33,8 @@ Perkenalkan aplikasi terbaik kami Digilib - your one-stop destination for all yo
 - PHP - versi 8.1.10
 
 ## Screenshots
-Update soon...
+Preview
+![Preview](./img/ss/preview.webp)
 
 ## License
 MIT License
