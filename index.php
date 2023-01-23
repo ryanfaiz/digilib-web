@@ -22,5 +22,11 @@
             <a href=""><img src="/img/icon/profile.webp" alt="Profile Icon"></a>
         </div>
     </nav>
+
+    <head>
+        <h1>DigiLib, your one-stop destination for all your reading needs.</h1>
+
+        <img src="/img/head.webp" alt="Head Image">
+    </head>
 </body>
 </html>
