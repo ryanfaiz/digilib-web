@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
 }
 
 a {
@@ -46,6 +47,7 @@ nav div a {
     width: 100%;
     overflow: scroll;
     overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .book-container {
