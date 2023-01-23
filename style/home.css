@@ -37,3 +37,8 @@ nav div a {
 #head-sect h1 {
     font-size: 64px;
 }
+
+.book-container {
+    display: flex;
+    align-items: center;
+}
