@@ -31,6 +31,10 @@
 
     <section id="new-sect">
         <h1>New Collection</h1>
+
+        <div class="book-container">
+            
+        </div>
     </section>
 </body>
 </html>
