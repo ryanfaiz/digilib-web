@@ -35,9 +35,9 @@
         <div class="book-container">
             <div class="book">
                 <div class="book-cover">
-                
+                    <img src="" alt="">
                 </div>
-                
+
                 <h2>Book Title</h2>
             </div>
         </div>
