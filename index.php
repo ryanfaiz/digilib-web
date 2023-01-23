@@ -12,9 +12,9 @@
         <a href=""><h1>DigiLib</h1></a>
 
         <div>
-            <a href=""><p>Collection</p></a>
-            <a href=""><p>Genre</p></a>
-            <a href=""><p>Categories</p></a>
+            <a href="">Collection</a>
+            <a href="">Genre</a>
+            <a href="">Categories</a>
         </div>
 
         <div>
