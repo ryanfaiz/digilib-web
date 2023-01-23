@@ -35,7 +35,7 @@
         <div class="book-container">
             <div class="book">
                 <div class="book-cover">
-                    <img src="" alt="">
+                    <img src="/img/sample/book-cover-sample.webp" alt="Book Cover">
                 </div>
 
                 <h2>Book Title</h2>
