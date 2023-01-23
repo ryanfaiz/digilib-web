@@ -38,6 +38,10 @@ nav div a {
     font-size: 64px;
 }
 
+#new-sect {
+    margin: 25px 50px;
+}
+
 .book-container {
     display: flex;
     align-items: center;
