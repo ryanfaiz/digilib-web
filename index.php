@@ -23,10 +23,10 @@
         </div>
     </nav>
 
-    <head>
+    <section id="head-sect">
         <h1>DigiLib, your one-stop destination for all your reading needs.</h1>
 
         <img src="/img/head.webp" alt="Head Image">
-    </head>
+    </section>
 </body>
 </html>
