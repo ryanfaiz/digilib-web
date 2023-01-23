@@ -45,5 +45,5 @@ nav div a {
 
 .book-cover img {
     aspect-ratio: 5 / 8;
-    
+    max-height: 360px;
 }
