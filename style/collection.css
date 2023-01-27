@@ -28,3 +28,7 @@ nav div a {
 #collection-sect {
     margin: 25px 50px;
 }
+
+#collection-sect h1 {
+    font-size: 48px;
+}
