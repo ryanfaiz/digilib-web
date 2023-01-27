@@ -23,5 +23,106 @@
             <a href=""><img src="/img/icon/profile.webp" alt="Profile Icon"></a>
         </div>
     </nav>
+
+    <section id="tag-1-sect">
+        <div class="tag-title">
+            <h1>New Collection</h1>
+            <a href="">See more</a>
+        </div>
+
+        <div class="horizontal-slide">
+            <div class="book-container">
+                <a href="">
+                    <div class="book">
+                        <div class="book-cover">
+                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 1">
+                        </div>
+    
+                        <h2>Book Title</h2>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="book">
+                        <div class="book-cover">
+                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 2">
+                        </div>
+    
+                        <h2>Book Title</h2>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="book">
+                        <div class="book-cover">
+                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 3">
+                        </div>
+    
+                        <h2>Book Title</h2>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="book">
+                        <div class="book-cover">
+                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 4">
+                        </div>
+    
+                        <h2>Book Title</h2>
+                    </div>
+                </a>
+        </div>
+    </section>
+
+    <section id="tag-2-sect">
+        <div class="tag-title">
+            <h1>New Collection</h1>
+            <a href="">See more</a>
+        </div>
+
+        <div class="horizontal-slide">
+            <div class="book-container">
+                <a href="">
+                    <div class="book">
+                        <div class="book-cover">
+                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 1">
+                        </div>
+    
+                        <h2>Book Title</h2>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="book">
+                        <div class="book-cover">
+                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 2">
+                        </div>
+    
+                        <h2>Book Title</h2>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="book">
+                        <div class="book-cover">
+                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 3">
+                        </div>
+    
+                        <h2>Book Title</h2>
+                    </div>
+                </a>
+    
+                <a href="">
+                    <div class="book">
+                        <div class="book-cover">
+                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 4">
+                        </div>
+    
+                        <h2>Book Title</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
