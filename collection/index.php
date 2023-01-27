@@ -26,6 +26,9 @@
 
     <section id="collection-sect">
         <h1>Collection</h1>
+        <div id="booklist">
+            
+        </div>
     </section>
 </body>
 </html>
