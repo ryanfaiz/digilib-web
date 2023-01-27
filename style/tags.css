@@ -37,3 +37,10 @@ section {
 .tag-title a {
     margin-left: 25px;
 }
+
+.horizontal-slide {
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
