@@ -28,3 +28,12 @@ nav div a {
 section {
     margin: 25px 50px;
 }
+
+.tag-title {
+    display: flex;
+    align-items: baseline;
+}
+
+.tag-title a {
+    margin-left: 25px;
+}
