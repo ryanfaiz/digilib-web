@@ -38,3 +38,7 @@ nav div a {
     align-items: center;
     flex-wrap: wrap;
 }
+
+.book {
+    margin: 25px 25px 25px 0px;
+}
