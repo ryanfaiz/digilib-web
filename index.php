@@ -14,7 +14,7 @@
 
         <div>
             <a href="">Collection</a>
-            <a href="">Genre</a>
+            <a href="">Tags</a>
             <a href="">Categories</a>
         </div>
 
