@@ -44,3 +44,8 @@ section {
     overflow-y: hidden;
     overflow-x: auto;
 }
+
+.book-container {
+    display: flex;
+    align-items: center;
+}
