@@ -11,9 +11,9 @@
         <a href="/"><h1>DigiLib</h1></a>
 
         <div>
-            <a href="">Collection</a>
-            <a href="">Tags</a>
-            <a href="">Categories</a>
+            <a href="/collection">Collection</a>
+            <a href="/tags">Tags</a>
+            <a href="/categories">Categories</a>
         </div>
 
         <div>
