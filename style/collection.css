@@ -32,3 +32,9 @@ nav div a {
 #collection-sect h1 {
     font-size: 48px;
 }
+
+#booklist {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
