@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collection | DigiLib</title>
     <link rel="shortcut icon" href="/img/icon/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="/style/collection.css">
 </head>
 <body>
     <nav>
