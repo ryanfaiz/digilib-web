@@ -29,14 +29,17 @@ nav div a {
     display: flex;
     margin: 25px 50px;
     align-items: center;
+    justify-content: center;
 }
 
 #head-sect img {
     max-width: 480px;
+    justify-items: flex-end;
 }
 
 #head-sect h1 {
     font-size: 64px;
+    max-width: 720px;
 }
 
 #new-sect {
