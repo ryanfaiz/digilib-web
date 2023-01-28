@@ -26,7 +26,7 @@
 
     <section id="tag-1-sect">
         <div class="tag-title">
-            <h1>New Collection</h1>
+            <h1>Tags Comedy</h1>
             <a href="">See more</a>
         </div>
 
@@ -76,7 +76,7 @@
 
     <section id="tag-2-sect">
         <div class="tag-title">
-            <h1>New Collection</h1>
+            <h1>Tags Fantasy</h1>
             <a href="">See more</a>
         </div>
 
