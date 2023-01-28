@@ -19,8 +19,8 @@
         </div>
 
         <div>
-            <a href=""><img src="/img/icon/search.webp" alt="Search Icon"></a>
-            <a href=""><img src="/img/icon/profile.webp" alt="Profile Icon"></a>
+            <a href="/search"><img src="/img/icon/search.webp" alt="Search Icon"></a>
+            <a href="/profile"><img src="/img/icon/profile.webp" alt="Profile Icon"></a>
         </div>
     </nav>
 
