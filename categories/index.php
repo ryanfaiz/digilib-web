@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        <a href=""><h1>DigiLib</h1></a>
+        <a href="/"><h1>DigiLib</h1></a>
 
         <div>
             <a href="/collection">Collection</a>
