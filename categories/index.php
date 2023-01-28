@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="/style/categories.css">
 </head>
 <body>
+    <nav>
+        <a href=""><h1>DigiLib</h1></a>
+
+        <div>
+            <a href="/collection">Collection</a>
+            <a href="/tags">Tags</a>
+            <a href="/categories">Categories</a>
+        </div>
+
+        <div>
+            <a href=""><img src="/img/icon/search.webp" alt="Search Icon"></a>
+            <a href=""><img src="/img/icon/profile.webp" alt="Profile Icon"></a>
+        </div>
+    </nav>
     
 </body>
 </html>
