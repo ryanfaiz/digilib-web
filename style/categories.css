@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    margin: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div a {
+    margin: 0px 15px;
+}
+
+section {
+    margin: 25px 50px;
+}
+
+.tag-title {
+    display: flex;
+    align-items: baseline;
+}
+
+.tag-title a {
+    margin-left: 25px;
+}
+
+.horizontal-slide {
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.book-container {
+    display: flex;
+    align-items: center;
+}
+
+.book {
+    margin: 25px 25px 25px 0px;
+}
+
+.book-cover img {
+    aspect-ratio: 5 / 8;
+    max-height: 360px;
+    border-radius: 15px;
+}
