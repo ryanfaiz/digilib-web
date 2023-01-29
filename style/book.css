@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    margin: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div a {
+    margin: 0px 15px;
+}
+
+.book-cover img {
+    aspect-ratio: 5 / 8;
+    max-height: 360px;
+    border-radius: 15px;
+}
+
+#head-sect {
+    display: flex;
+    margin: 25px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#head-sect h1 {
+    font-size: 64px;
+}
+
+#head-sect h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+#head-sect p {
+    max-width: 320px;
+}
+
+#head-sect a {
+    margin-top: 35px;
+    padding: 10px;
+    background-color: rgb(252, 129, 129);
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+#stat-sect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 100px;
+}
+
+.card {
+    padding: 25px;
+    background-color: rgb(148, 148, 148);
+    width: 150px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.card p {
+    color: white;
+    background-color: rgb(148, 148, 148);
+    font-size: 36px;
+    width: 100%;
+    word-wrap: break-word;
+}

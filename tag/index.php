@@ -1,17 +1,25 @@
 <?php
+    if ( empty($_GET["tag"])) {
+        header("Location: /tags");
+        exit;
+    }
+
+    $tag = $_GET["tag"];
+
     $conn = mysqli_connect("localhost", "root", "", "digilib");
 
-    $query = "SELECT id, title, folder, author FROM books ORDER BY title ASC LIMIT 50";
+    $book_query = "SELECT id, title, folder, author FROM books WHERE tag = '$tag' ORDER BY title ASC LIMIT 5";
 
-    $find = mysqli_query($conn, $query);
+    $book_find = mysqli_query($conn, $book_query);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collection | DigiLib</title>
+    <title>Tag <?= $tag ?> | Digilib</title>
     <link rel="shortcut icon" href="/img/icon/favicon.webp" type="image/webp">
     <link rel="stylesheet" href="/style/collection.css">
 </head>
@@ -34,7 +42,7 @@
     <section id="collection-sect">
         <h1>Collection</h1>
         <div id="booklist">
-            <?php while ( $result = mysqli_fetch_row($find)) : ?>
+            <?php while ( $result = mysqli_fetch_row($book_find)) : ?>
                 <a href="">
                     <div class="book">
                         <div class="book-cover">
@@ -48,4 +56,3 @@
         </div>
     </section>
 </body>
-</html>

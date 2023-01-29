@@ -1,17 +1,3 @@
-<?php
-    $conn = mysqli_connect("localhost", "root", "", "digilib");
-
-    session_start();
-
-    if ( isset($_POST["search"])) {
-        $_SESSION["search"] = $_POST["search"];
-        
-        header("Location: /result");
-        exit;
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,14 +25,9 @@
     </nav>
 
     <section id="search-sect">
-            <form id="search-box" action="" method="post">
-                <!-- <select name="type" id="type">
-                    <option value="tiitle">Title</option>
-                    <option value="author">Author</option>
-                    <option value="publisher">Publisher</option>
-                </select> -->
-                <input type="text" name="search" id="search" autofocus placeholder="Type here ...">
-                <button type="submit" name="submit"><img src="/img/icon/search.webp" alt="Search Icon"></button>
+            <form id="search-box" action="/result" method="get">
+                <input type="text" name="search" id="search" autofocus placeholder="Type here ..." required>
+                <button type="submit"><img src="/img/icon/search.webp" alt="Search Icon"></button>
             </form>
     </section>
 </body>

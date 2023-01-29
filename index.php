@@ -1,3 +1,15 @@
+<?php
+    $conn = mysqli_connect("localhost", "root", "", "digilib");
+
+    $new_query = "SELECT id, title, folder, author FROM books ORDER BY id DESC LIMIT 5";
+
+    $new_find = mysqli_query($conn, $new_query);
+
+    $popular_query = "SELECT id, title, folder, author FROM books WHERE stats > 0 ORDER BY stats DESC LIMIT 5";
+
+    $popular_find = mysqli_query($conn, $popular_query);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,45 +47,18 @@
 
         <div class="horizontal-slide">
             <div class="book-container">
+                <?php while ( $new_result = mysqli_fetch_row($new_find)) : ?>
                 <a href="">
                     <div class="book">
                         <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 1">
+                            <img src="/book/<?= $new_result[2]; ?>/cover.webp" alt="Book Cover <?= $new_result[0]; ?>">
                         </div>
     
-                        <h2>Book Title</h2>
+                        <h2><?= $new_result[1]; ?></h2>
                     </div>
                 </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 2">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 3">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 4">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
+                <?php endwhile; ?>
+            </div>
         </div>
     </section>
 
@@ -82,45 +67,17 @@
 
         <div class="horizontal-slide">
             <div class="book-container">
+                <?php while ( $popular_result = mysqli_fetch_row($popular_find)) : ?>
                 <a href="">
                     <div class="book">
                         <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 1">
+                            <img src="/book/<?= $popular_result[2]; ?>/cover.webp" alt="Book Cover <?= $popular_result[0]; ?>">
                         </div>
     
-                        <h2>Book Title</h2>
+                        <h2><?= $popular_result[1]; ?></h2>
                     </div>
                 </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 2">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 3">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
-    
-                <a href="">
-                    <div class="book">
-                        <div class="book-cover">
-                            <img src="/img/sample/book-cover-sample.webp" alt="Book Cover 4">
-                        </div>
-    
-                        <h2>Book Title</h2>
-                    </div>
-                </a>
+                <?php endwhile; ?>
             </div>
         </div>
     </section>
