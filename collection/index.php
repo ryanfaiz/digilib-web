@@ -35,7 +35,7 @@
         <h1>Collection</h1>
         <div id="booklist">
             <?php while ( $result = mysqli_fetch_row($find)) : ?>
-                <a href="">
+                <a href="/book?title=<?= $result[2]; ?>">
                     <div class="book">
                         <div class="book-cover">
                             <img src="/book/<?= $result[2]; ?>/cover.webp" alt="Book Cover <?= $result[0]; ?>">

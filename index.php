@@ -48,7 +48,7 @@
         <div class="horizontal-slide">
             <div class="book-container">
                 <?php while ( $new_result = mysqli_fetch_row($new_find)) : ?>
-                <a href="">
+                <a href="/book?title=<?= $new_result[2]; ?>">
                     <div class="book">
                         <div class="book-cover">
                             <img src="/book/<?= $new_result[2]; ?>/cover.webp" alt="Book Cover <?= $new_result[0]; ?>">
@@ -68,7 +68,7 @@
         <div class="horizontal-slide">
             <div class="book-container">
                 <?php while ( $popular_result = mysqli_fetch_row($popular_find)) : ?>
-                <a href="">
+                <a href="/book?title=<?= $popular_result[2]; ?>">
                     <div class="book">
                         <div class="book-cover">
                             <img src="/book/<?= $popular_result[2]; ?>/cover.webp" alt="Book Cover <?= $popular_result[0]; ?>">

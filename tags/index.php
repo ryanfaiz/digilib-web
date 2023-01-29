@@ -48,7 +48,7 @@
             <div class="horizontal-slide">
                 <div class="book-container">
                     <?php while ( $book_result = mysqli_fetch_row($book_find)) : ?>
-                        <a href="">
+                        <a href="/book?title=<?= $book_result[2]; ?>">
                             <div class="book">
                                 <div class="book-cover">
                                     <img src="/book/<?= $book_result[2]; ?>/cover.webp" alt="Book Cover <?= $book_result[0]; ?>">

@@ -1,14 +1,14 @@
 <?php
-    if ( empty($_GET["tag"])) {
-        header("Location: /tags");
+    if ( empty($_GET["category"])) {
+        header("Location: /categories");
         exit;
     }
 
-    $tag = $_GET["tag"];
+    $category = $_GET["category"];
 
     $conn = mysqli_connect("localhost", "root", "", "digilib");
 
-    $book_query = "SELECT id, title, folder, author FROM books WHERE tag = '$tag' ORDER BY title ASC";
+    $book_query = "SELECT id, title, folder, author FROM books WHERE category = '$category' ORDER BY title ASC";
 
     $book_find = mysqli_query($conn, $book_query);
 ?>
@@ -19,7 +19,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag <?= $tag ?> | Digilib</title>
+    <title>Category <?= $category ?> | Digilib</title>
     <link rel="shortcut icon" href="/img/icon/favicon.webp" type="image/webp">
     <link rel="stylesheet" href="/style/collection.css">
 </head>
