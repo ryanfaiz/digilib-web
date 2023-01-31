@@ -15,6 +15,7 @@
             if (password_verify($pass, $row["pass"])) {
                 $_SESSION["login"] = true;
                 $_SESSION['nisp'] = $nisp;
+                $_SESSION['admin'] = $true;
                 header("Location: /profile");
                 exit;
             }

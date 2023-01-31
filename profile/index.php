@@ -27,6 +27,7 @@
 </head>
 <body>
     <a href="/auth/logout.php">Logout</a>
+    <a href="/dashboard">Dashboard</a>
     <h1>Profile</h1>
     <p><?= $result[1] ?></p>
     <p><?= $result[2] ?></p>

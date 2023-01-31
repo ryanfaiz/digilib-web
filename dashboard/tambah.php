@@ -1,4 +1,11 @@
 <?php
+    session_start();
+    
+    if (!isset($_SESSION["login"])) {
+        header("Location: /auth");
+        exit;
+    }
+
     $conn = mysqli_connect("localhost", "root", "", "digilib");
 
     if ( isset($_POST["submit"])) {

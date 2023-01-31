@@ -1,4 +1,11 @@
 <?php
+    session_start();
+
+    if (!isset($_SESSION["login"])) {
+        header("Location: /auth");
+        exit;
+    }
+    
     $conn = mysqli_connect("localhost", "root", "", "digilib");
 
     if (!empty($_GET["isbn"])) {
@@ -45,8 +52,8 @@
                     <tr>
                         <td><?= $row[0]; ?></td>
                         <td>
-                            <a href="ubah.php?id=<?= $row[0]; ?>">Ubah</a> |
-                            <a href="pinjam.php?id=<?= $row[0]; ?>">Pinjam</a>
+                            <a href="status.php?id=<?= $row[0]; ?>">Status</a> |
+                            <a href="pinjam.php?isbn=<?= $row[2]; ?>">Pinjam</a>
                         </td>
                         <td><?= $row[1]; ?></td>
                         <td><?= $row[2]; ?></td>
