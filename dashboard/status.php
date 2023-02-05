@@ -59,7 +59,7 @@
     } ?>
 
     <p><a href="/dashboard/kembali.php?id=<?=$result[0]?>">Kembalikan Buku</a></p>
-    <p><a href="/dashboard/pinjam.php?id=<?=$result[2]?>">Pinjamkan Buku</a></p>
+    <p><a href="/dashboard/pinjam.php?isbn=<?=$result[2]?>">Pinjamkan Buku</a></p>
 </body>
 </html>
 
