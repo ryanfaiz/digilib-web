@@ -26,7 +26,7 @@
 
     <section id="search-sect">
             <form id="search-box" action="/result" method="get">
-                <input type="text" name="search" id="search" placeholder="Type here ..." autofocus required>
+                <input type="text" name="search" id="search" placeholder="Type here ..." autofocus required autocomplete="off">
                 <button type="submit"><img src="/img/icon/search.webp" alt="Search Icon"></button>
             </form>
     </section>

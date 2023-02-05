@@ -68,7 +68,7 @@
     <div id="form-container">
         <form action="" method="post">
             <h2>NISP</h2>
-            <input type="text" name="nisp" id="nisp" autofocus required><br><br>
+            <input type="text" name="nisp" id="nisp" autofocus required autocomplete="off"><br><br>
     
             <h2>Password</h2>
             <input type="password" name="pass" id="pass" required><br><br>
