@@ -49,39 +49,29 @@
     </nav>
 
     <section id="head-sect">
-        <div>
-            <h1><?= $result[1]; ?></h1>
-            <h2><?= $result[8]; ?></h2>
-            <a href="/read?title=<?= $title ?>">Mulai Baca</a>
-            
-        </div>
-
-        <div class="book-cover">
+        <div style="margin-right:50px">
             <img src="/book/<?= $result[2]; ?>/cover.webp" alt="<?= $result[1]; ?> Book Cover">
-        </div>
+            <h1><?= $result[1]; ?></h1>
+            <h2>by <?= $result[8]; ?></h2><br>
 
+            <?php if($result[10] == 0){ echo "<div><a href='/read?title=$title'>Mulai Baca</a></div><br><br>";} ?>
+            <?php if($result[10] == 1 && $result[12] == 0){ echo "<div><a href='/profile'>Pinjam Buku</a></div><br><br>";} ?>
+            
+            <p>Viewed: <?= $result[11]; ?></p>
+            <p>Pages: <?= $result[4]; ?></p>
+            <p>Publisher: <?= $result[7]; ?></p>
+            <p>Genre: <?= $result[9]; ?></p>
+            <?php if($result[10] == 1){
+                if($result[12] == 0){
+                    echo "<p>Status Buku: Tersedia 🟢</p>";
+                } else {
+                    echo "<p>Status Buku: Terpinjam 🔴</p>";
+                }
+            } ?>
+        </div><br><br>
         <div>
+            <h2>Blurb</h2><br>
             <p><?= $result[3]; ?></p>
-        </div>
-        
-    </section>
-
-    <section id="stat-sect">
-        <div class="card">
-            <p>Viewed</p>
-            <p><?= $result[11]; ?></p>
-        </div>
-        <div class="card">
-            <p>Pages</p>
-            <p><?= $result[4]; ?></p>
-        </div>
-        <div class="card">
-            <p>Publisher</p>
-            <p><?= $result[7]; ?></p>
-        </div>
-        <div class="card">
-            <p>Tag</p>
-            <p><?= $result[9]; ?></p>
         </div>
     </section>
 </body>

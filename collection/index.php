@@ -1,7 +1,7 @@
 <?php
     $conn = mysqli_connect("localhost", "root", "", "digilib");
 
-    $query = "SELECT id, title, folder, author FROM books ORDER BY title ASC LIMIT 50";
+    $query = "SELECT id, title, folder, author, category FROM books ORDER BY title ASC LIMIT 50";
 
     $find = mysqli_query($conn, $query);
 ?>
@@ -42,6 +42,7 @@
                         </div>
     
                         <h2><?= $result[1]; ?></h2>
+                        <?php if($result[4] == 1){echo "<p class='digital-tag'>Physical</p>";} ?>
                     </div>
                 </a>
             <?php endwhile; ?>

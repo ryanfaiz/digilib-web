@@ -8,7 +8,7 @@
     
     $search = $_GET["search"];
 
-    $query = "SELECT id, title, folder, author FROM books WHERE title LIKE '%$search%' OR author LIKE '%$search%' LIMIT 10";
+    $query = "SELECT id, title, folder, author, category FROM books WHERE title LIKE '%$search%' OR author LIKE '%$search%' OR isbn LIKE '$search' OR publisher LIKE '%$search%' LIMIT 25";
 
     $fetch = mysqli_query($conn, $query);
 ?>
@@ -51,6 +51,7 @@
                         </div>
     
                         <h2><?= $result[1]; ?></h2>
+                        <?php if($result[4] == 1){echo "<p class='digital-tag'>Physical</p>";} ?>
                     </div>
                 </a>
             <?php endwhile; ?>

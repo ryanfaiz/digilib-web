@@ -39,7 +39,7 @@
                 <a href="/tag?tag=<?= $tag_result[0]; ?>">See more</a>
             </div>
             <?php
-                $book_query = "SELECT id, title, folder, author FROM books WHERE tag = '$tag_result[0]' ORDER BY title ASC LIMIT 5";
+                $book_query = "SELECT id, title, folder, author, category FROM books WHERE tag = '$tag_result[0]' ORDER BY title ASC LIMIT 5";
 
                 $book_find = mysqli_query($conn, $book_query);
 
@@ -55,6 +55,7 @@
                                 </div>
             
                                 <h2><?= $book_result[1]; ?></h2>
+                                <?php if($book_result[4] == 1){echo "<p class='digital-tag'>Physical</p>";} ?>
                             </div>
                         </a>
                     <?php endwhile; ?>

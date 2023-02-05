@@ -35,16 +35,29 @@ nav div a {
 
 #booklist {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .book {
     margin: 25px 25px 25px 0px;
+    width: 225px;
+}
+
+.book h2{
+    word-wrap: break-word;
 }
 
 .book-cover img {
     aspect-ratio: 5 / 8;
-    max-height: 360px;
+    height: 360px;
+    width: 225px;
     border-radius: 15px;
+}
+.digital-tag{
+    background-color: aqua;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
 }

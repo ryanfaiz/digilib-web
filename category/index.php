@@ -1,14 +1,20 @@
 <?php
-    if ( empty($_GET["category"])) {
+    if ( $_GET["category"] != 0 && $_GET["category"] != 1) {
         header("Location: /categories");
         exit;
     }
 
-    $category = $_GET["category"];
+    if ( $_GET["category"] == 0) {
+        $category = "Digital";
+    } else {
+        $category = "Physical";
+    }
+    
+    $target = $_GET['category'];
 
     $conn = mysqli_connect("localhost", "root", "", "digilib");
 
-    $book_query = "SELECT id, title, folder, author FROM books WHERE category = '$category' ORDER BY title ASC";
+    $book_query = "SELECT id, title, folder, author FROM books WHERE category = $target ORDER BY title ASC";
 
     $book_find = mysqli_query($conn, $book_query);
 ?>
@@ -19,7 +25,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category <?= $category ?> | Digilib</title>
+    <title>Category <?= $category ?> Books | Digilib</title>
     <link rel="shortcut icon" href="/img/icon/favicon.webp" type="image/webp">
     <link rel="stylesheet" href="/style/collection.css">
 </head>
@@ -40,7 +46,7 @@
     </nav>
 
     <section id="collection-sect">
-        <h1>Collection</h1>
+        <h1>Collection <?= $category ?> Books</h1>
         <div id="booklist">
             <?php while ( $result = mysqli_fetch_row($book_find)) : ?>
                 <a href="/book?title=<?= $result[2]; ?>">

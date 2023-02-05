@@ -47,7 +47,7 @@ section {
 
 .book-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .book {
@@ -58,4 +58,11 @@ section {
     aspect-ratio: 5 / 8;
     max-height: 360px;
     border-radius: 15px;
+}
+.digital-tag{
+    background-color: aqua;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
 }

@@ -1,11 +1,11 @@
 <?php
     $conn = mysqli_connect("localhost", "root", "", "digilib");
 
-    $new_query = "SELECT id, title, folder, author FROM books ORDER BY id DESC LIMIT 5";
+    $new_query = "SELECT id, title, folder, author, category FROM books ORDER BY id DESC LIMIT 5";
 
     $new_find = mysqli_query($conn, $new_query);
 
-    $popular_query = "SELECT id, title, folder, author FROM books WHERE stats > 0 ORDER BY stats DESC LIMIT 5";
+    $popular_query = "SELECT id, title, folder, author, category FROM books WHERE stats > 0 ORDER BY stats DESC LIMIT 5";
 
     $popular_find = mysqli_query($conn, $popular_query);
 ?>
@@ -53,10 +53,11 @@
                         <div class="book-cover">
                             <img src="/book/<?= $new_result[2]; ?>/cover.webp" alt="Book Cover <?= $new_result[0]; ?>">
                         </div>
-    
                         <h2><?= $new_result[1]; ?></h2>
+                        <?php if($new_result[4] == 1){echo "<p class='digital-tag'>Physical</p>";} ?>
                     </div>
                 </a>
+                
                 <?php endwhile; ?>
             </div>
         </div>

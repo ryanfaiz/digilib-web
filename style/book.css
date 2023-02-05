@@ -25,17 +25,19 @@ nav div a {
     margin: 0px 15px;
 }
 
-.book-cover img {
+#head-sect img {
     aspect-ratio: 5 / 8;
-    max-height: 360px;
+    height: 500px;
+    width: 312px;
     border-radius: 15px;
 }
 
 #head-sect {
     display: flex;
+    flex-wrap: wrap;
     margin: 25px 100px;
-    align-items: center;
     justify-content: space-between;
+    max-width: 1100px;
 }
 
 #head-sect h1 {
@@ -48,7 +50,7 @@ nav div a {
 }
 
 #head-sect p {
-    max-width: 320px;
+    max-width: 480px;
 }
 
 #head-sect a {
@@ -57,27 +59,4 @@ nav div a {
     background-color: rgb(252, 129, 129);
     font-size: 24px;
     border-radius: 15px;
-}
-
-#stat-sect {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 25px 100px;
-}
-
-.card {
-    padding: 25px;
-    background-color: rgb(148, 148, 148);
-    width: 150px;
-    height: auto;
-    border-radius: 25px;
-}
-
-.card p {
-    color: white;
-    background-color: rgb(148, 148, 148);
-    font-size: 36px;
-    width: 100%;
-    word-wrap: break-word;
 }

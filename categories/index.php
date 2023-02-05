@@ -35,7 +35,7 @@
     <?php while ( $category_result = mysqli_fetch_row($category_find)) : ?>
         <section id="tag-1-sect">
             <div class="tag-title">
-                <h1>Tags <?= $category_result[0]; ?></h1>
+                <h1>Category <?php if($category_result[0] == 0){echo "Digital";} elseif ($category_result[0] == 1) {echo "Physical";} ?></h1>
                 <a href="/category?category=<?= $category_result[0]; ?>">See more</a>
             </div>
             <?php

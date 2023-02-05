@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Dashboard | DigiLib</title>
     <script src="/js/html5-qrcode.min.js"></script>
+    <link rel="shortcut icon" href="/img/icon/favicon.webp" type="image/webp">
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div id="qr-reader" style="width:300px"></div>

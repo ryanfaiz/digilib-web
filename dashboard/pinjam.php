@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if (!isset($_SESSION["login"])) {
+    if (!isset($_SESSION["admin"])) {
         header("Location: /auth");
         exit;
     }
@@ -14,11 +14,11 @@
     $isbn = $_GET["isbn"];
     
     $conn = mysqli_connect("localhost", "root", "", "digilib");
-    $query = "SELECT * FROM lokal WHERE isbn = '$isbn'";
+    $query = "SELECT * FROM books WHERE isbn = '$isbn'";
     $run = mysqli_query($conn, $query);
     $result = mysqli_fetch_row($run);
 
-    if ($result[3] == 1) {
+    if ($result[12] == 1) {
         echo '<script type="text/javascript">'; 
         echo 'alert("Buku ini masih dalam status peminjaman");'; 
         echo 'window.location.href = "index.php";';
@@ -31,10 +31,11 @@
     $return = date("Y-m-d", strtotime($today . ' +5 day'));
 
     if (!empty($_GET["nisp"])){
+        $nisp = $_GET["nisp"];
         $conn = mysqli_connect("localhost", "root", "", "digilib");
-        $pinjam_query = "UPDATE lokal SET `status`='1',`return_date`='$return' WHERE isbn = '$isbn'";
+        $pinjam_query = "UPDATE books SET `status`='1',`return_date`='$return', `borrower`='$nisp' WHERE isbn = '$isbn'";
         $pinjam_run = mysqli_query($conn, $pinjam_query);
-        header("Location: status.php?id=$result[0]");
+        header("Location: /dashboard/status.php?id=$result[0]");
         exit;
     }
     ?>
@@ -47,6 +48,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinjam | DigiLib</title>
     <script src="/js/html5-qrcode.min.js"></script>
+    <link rel="shortcut icon" href="/img/icon/favicon.webp" type="image/webp">
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -60,12 +71,12 @@
     <div id="qr-reader-results"></div>
 
     <script>
-        var isbn = <?= $result[2] ?>;
+        var isbn = <?= $result[5] ?>;
         console.log(isbn);
         var resultContainer = document.getElementById('qr-reader-results');
         function onScanSuccess(decodedText, decodedResult) {
             alert('Nomor NISP Peminjam:  ' + decodedText);
-            window.location.href = 'pinjam.php/?isbn='+ isbn + '&nisp=' + decodedText;
+            window.location.href = '/dashboard/pinjam.php/?isbn='+ isbn + '&nisp=' + decodedText;
         }
 
         var html5QrcodeScanner = new Html5QrcodeScanner(
